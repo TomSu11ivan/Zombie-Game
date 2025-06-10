@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf=8" />
+    <title>Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}" />
+    <script src="{{ url_for('static', filename='game.js') }}" type="module"></script>
+</head>
+
+<body>
+    <header class="links">
+        <a id="l1" href="{{ url_for('index') }}">Home</a>
+        <a id="l2" href="{{ url_for('how_to_play') }}">How to Play</a>
+        <a id="l3" href="{{ url_for('leaderboard') }}">Leaderboard</a>
+    </header>
+    <main>
+        <canvas width="900" height="650">
+        </canvas>
+        <p id="outcome">
+        </p>
+
+        <button id="button" width="200px" height="200px" top="50px" left="50px">Play Again?</button>
+    </main>
+</body>
+
+</html>

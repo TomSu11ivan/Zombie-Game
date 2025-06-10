@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf=8" />
+        <title>Zombies!</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}" />
+    </head>
+    <body>
+        <main>
+                <h1>Welcome to Zombies</h1>
+                <section class="links">
+                <p>
+                    <a id="l1" href="{{ url_for('game') }}">PLAY</a>
+                    <a id="l2" href="{{ url_for('how_to_play') }}">How to Play</a>
+                    <a id="l3" href="{{ url_for('leaderboard') }}">Leaderboard</a>
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
