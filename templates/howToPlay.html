@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf=8" />
+    <title>How to Play</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}" />
+</head>
+
+<body>
+    <h1>How to Play Zombies</h1>
+    <header class="links">
+        <a id="l1" href="{{ url_for('index') }}">Home</a>
+        <a id="l3" href="{{ url_for('game') }}">PLAY</a>
+        <a id="l2" href="{{ url_for('leaderboard') }}">Leaderboard</a>
+    </header>
+    <main>
+        <section class="controls">
+            <h2>Controls</h2>
+            <ol class="MyOL">
+                <li>
+                    Press the <b>UP ARROW</b> to move up
+                </li>
+                <li>
+                    Press the <b>DOWN ARROW</b> to move down
+                </li>
+                <li>
+                    Press the <b>RIGHT AND LEFT ARROWS</b> to move side to side
+                </li>
+                <li>
+                    Press <b>SPACE</b> to shoot the zombies
+                </li>
+            </ol>
+        </section>
+
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol class="MyOL2">
+               <li>
+                For every zombie you shoot, you get one point
+               </li>
+               <li>
+                Your goal is to get as many points as you can before you die
+               </li>
+               <li>
+                If you get hit by a zombie once, its Game Over!
+               </li>
+            </ol>
+        </section>
+    </main>
+</body>
+
+</html>
